@@ -1,0 +1,1384 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introduction of System Call - GeeksforGeeks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+
+
+
+
+
+
+
+
+
+CoursesDSA to DevelopmentNewly Launched!Android with KotlinGenerative AI & ChatGPTMaster Django FrameworkBecome AWS CertifiedFor Working ProfessionalsInterview 101: DSA & System DesignData Science Training ProgramJAVA Backend Development (Live)DevOps Engineering (LIVE)Software Testing & Automation (Live)Data Structures & Algorithms in PythonFor StudentsPlacement Preparation CourseData Science (Live)Data Structure & Algorithm-Self Paced (C++/JAVA)Master Competitive Programming (Live)Full Stack Development with React & Node JS (Live)GATE Exam CoursesGATE CS & IT (Self-Paced)GATE DS & AI (Self-Paced)All CoursesTutorialsData Structures & AlgorithmsDSA for BeginnersData StructuresArraysMatrixStringsLinked ListStackQueueTreeGeneric TreeBinary TreeBinary Search TreeAVL TreeB TreeB+ TreeRed Black TreeTree Data Structure TutorialHeapHashingGraphSet Data StructureMap Data StructureAdvanced Data StructureData Structures TutorialAlgorithmsAnalysis of AlgorithmsSearching AlgorithmsLinear SearchBinary SearchSearching Algorithms TutorialSorting AlgorithmsSelection SortBubble SortInsertion SortMerge SortQuick SortHeap SortCounting SortRadix SortBucket SortSorting Algorithms TutorialGreedy AlgorithmsDynamic ProgrammingGraph AlgorithmsPattern SearchingRecursionBacktrackingDivide and ConquerMathematical AlgorithmsGeometric AlgorithmsBitwise AlgorithmsRandomized AlgorithmsBranch and BoundAlgorithms TutorialComplete DSA TutorialCompetitive ProgrammingCompany Wise SDE SheetsFacebook SDE SheetAmazon SDE SheetApple SDE SheetNetflix SDE SheetGoogle SDE SheetWipro Coding SheetInfosys Coding SheetTCS Coding SheetCognizant Coding SheetHCL Coding SheetDSA Cheat SheetsDSA Sheet for BeginnersSDE SheetsFAANG Coding SheetLove Babbaar SheetMass Recruiter SheetProduct-Based Coding SheetCompany-Wise Preparation SheetTop 100 DSA Interview Questions Topic-wise100 Days of CodePythonPython TutorialPython ExercisesPython List ExercisePython String ExercisePython Tuple ExercisePython Dictionary ExercisePython Set ExercisePython Excercises Topic wisePython QuizPython ProgramsAdvanced Python TutorialPython API TutorialPython Database TutorialPython JSONPython Cheat SheetPython ProjectsPython Interview QuestionsML & Data ScienceMachine LearningMachine Learning TutorialMaths for MLML Projects100 Days of Machine LearningData Science TutorialData Science PackagesPandas TutorialNumPy TutorialData VisualizationData Visualization with PythonData Visualization with RTableauPower BIData AnalysisData Analysis with PythonData Analysis with R100 Days of Data AnalyticsDeep LearningNLP TutorialOpenCV TutorialInterview QuestionsMachine Learning Interview QuestionsDeep Learning Interview QuestionsR Interview QuestionsSystem DesignSystem Design TutorialSoftware Design PatternsSystem Design RoadmapTop 10 System Design Interview QuestionsInterview CornerCompany PreparationTop TopicsPractice Company QuestionsInterview ExperiencesExperienced InterviewsInternship InterviewsCompetitive ProgrammingMultiple Choice QuizzesAptitude for PlacementsPuzzles for InterviewsLanguagesCC++JavaPythonR TutorialC#SQLScalaPerlGo LanguageWeb DevelopmentHTMLHTML TutorialFree HTML CourseHTML Cheat SheetCSSCSS TutorialFree CSS CourseCSS Cheat SheetJavaScriptJavaScript TutorialJavaScript QuestionsJavaScript Cheat SheetDSA using JavaScriptFree JavaScript CourseJavaScript A to Z Complete GuideTypeScriptReactJSReactJS TutorialFree ReactJS CourseReactJS Cheat SheetNextJSNode.jsPHPAngularJSjQueryWeb Development Using PythonDjangoFlaskSeleniumPostmanGithubWeb Design100 Days of Web DevelopmentCS SubjectsOperating SystemDBMSComputer NetworksEngineering MathematicsComputer Organization and ArchitectureTheory of ComputationCompiler DesignDigital LogicSoftware EngineeringDevOps And LinuxDevOps TutorialGITAWSKubernetesDockerMicrosoft Azure TutorialGoogle Cloud PlatformDevOps RoadmapDevOps Interview QuestionsLinuxLinux TutorialLinux Commands A-ZLinux Commands CheatsheetFile Permissions in LinuxLinux System AdministrationLinux Shell ScriptingLinux NetworkingLinux Interview QuestionsSchool LearningClass 8 Study MaterialClass 9 Study MaterialClass 10 Study MaterialClass 11Study MaterialClass 12 Study MaterialEnglish GrammarGfG SchoolCommerceGATEGATE Computer Science NotesLast Minute NotesGATE CS Solved PapersGATE CS Original Papers and Official KeysGATE CS 2025 SyllabusGATE DA 2025 SyllabusOther CS ExamsISROUGC NETGeeksforGeeks VideosJobsGet Hired: Apply for JobsCorporate Hiring SolutionsFiltered JobsJobs for FreshersJobs for ExperiencedAll JobsPracticePractice Coding ProblemsAll DSA ProblemsProblem of the DayCompany Wise Coding PracticeAmazonMicrosoftFlipkartExplore AllGfG SDE SheetPractice Problems Difficulty WiseBasicEasyMediumHardLanguage Wise Coding PracticeCPPJavaPythonCurated DSA ListsBeginner's DSA SheetLove Babbar SheetTop 50 Array ProblemsTop 50 String ProblemsTop 50 DP ProblemsTop 50 Graph ProblemsTop 50 Tree ProblemsContestsJob-A-Thon Hiring ChallengeGfG Weekly [Rated Contest]All Contests and Events
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Notifications
+
+
+
+
+All
+
+
+
+
+
+ 
+
+View All
+
+
+
+
+
+
+
+
+
+Notifications
+
+
+
+Mark all as read
+
+
+
+
+
+
+All
+
+
+Unread
+
+
+Read
+
+
+
+
+
+                                        You're all caught up!!
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+AptitudeEngineering MathematicsDiscrete MathematicsOperating SystemDBMSComputer NetworksDigital Logic and DesignC ProgrammingData StructuresAlgorithmsTheory of ComputationCompiler DesignComputer Org and Architecture 
+
+
+
+
+▲
+
+
+
+
+
+
+
+
+
+
+
+
+Open In App
+
+
+
+
+
+
+
+
+
+
+
+
+Go PremiumShare Your ExperiencesOperating System TutorialOS BasicsWhat is an Operating System?Functions of Operating SystemTypes of Operating SystemsNeed and Functions of Operating SystemsCommonly Used Operating SystemStructure of Operating SystemOperating System ServicesIntroduction of System CallSystem Programs in Operating SystemOperating Systems StructuresHistory of Operating SystemBooting and Dual Booting of Operating SystemTypes of OSBatch Processing Operating SystemMultiprogramming in Operating SystemTime Sharing Operating SystemWhat is a Network Operating System?Real Time Operating System (RTOS)Process ManagementIntroduction of Process ManagementProcess Table and Process Control Block (PCB)Operations on ProcessesProcess Schedulers in Operating SystemInter Process Communication (IPC)Context Switching in Operating SystemPreemptive and Non-Preemptive SchedulingCPU Scheduling in OSCPU Scheduling in Operating SystemsCPU Scheduling CriteriaMultiple-Processor Scheduling in Operating SystemThread SchedulingThreads in OSThread in Operating SystemThreads and its types in Operating SystemMultithreading in Operating SystemProcess SynchronizationIntroduction of Process SynchronizationRace Condition VulnerabilityCritical Section in SynchronizationMutual Exclusion in SynchronizationCritical Section Problem SolutionPeterson's Algorithm in Process SynchronizationSemaphores in Process SynchronizationSemaphores and its typesProducer Consumer Problem using Semaphores | Set 1Readers-Writers Problem | Set 1 (Introduction and Readers Preference Solution)Dining Philosopher Problem Using SemaphoresHardware Synchronization Algorithms : Unlock and Lock, Test and Set, SwapDeadlocks & Deadlock Handling MethodsIntroduction of Deadlock in Operating SystemConditions for Deadlock in Operating SystemBanker's Algorithm in Operating SystemWait For Graph Deadlock Detection in Distributed SystemHandling DeadlocksDeadlock Prevention And AvoidanceDeadlock Detection And RecoveryDeadlock Ignorance in Operating SystemRecovery from Deadlock in Operating SystemMemory ManagementMemory Management in Operating SystemImplementation of Contiguous Memory Management TechniquesNon-Contiguous Allocation in Operating SystemCompaction in Operating SystemBest-Fit Allocation in Operating SystemWorst-Fit Allocation in Operating SystemsFirst-Fit Allocation in Operating SystemsFixed (or static) Partitioning in Operating SystemVariable (or Dynamic) Partitioning in Operating SystemPaging in Operating SystemSegmentation in Operating SystemVirtual Memory in Operating SystemPage Replacement AlgorithmsPage Replacement Algorithms in Operating SystemsProgram for Page Replacement Algorithms | Set 2 (FIFO)Belady's Anomaly in Page Replacement AlgorithmsOptimal Page Replacement AlgorithmProgram for Least Recently Used (LRU) Page Replacement algorithmTechniques to handle ThrashingStorage ManagementStorage ManagementFile Systems in Operating SystemFile Allocation MethodsFree Space Management in Operating SystemDisk Scheduling AlgorithmsRAID (Redundant Arrays of Independent Disks)OS Interview QuestionsLast Minute Notes – Operating SystemsOperating System Interview QuestionsOS Quiz and GATE PYQ'sOS Process ManagementOS Memory ManagementOS Input Output SystemsOS CPU SchedulingDeadlock50 Operating System MCQs  with AnswersDSA to Development Course 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introduction of System Call
+
+
+
+Last Updated : 
+16 Aug, 2024
+
+
+
+
+
+
+Summarize
+
+
+
+
+
+
+Comments
+
+
+
+
+
+
+
+Improve
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Suggest changes
+
+
+ 
+
+
+Like Article
+
+
+
+Like
+
+
+
+
+
+
+
+
+Save
+
+
+
+
+
+
+
+
+Share
+
+
+
+
+
+
+
+Report
+
+
+
+
+
+
+
+Follow
+
+
+
+
+
+A system call is a programmatic way in which a computer program requests a service from the kernel of the operating system it is executed on. A system call is a way for programs to interact with the operating system. A computer program makes a system call when it requests the operating system’s kernel.
+System call provides the services of the operating system to the user programs via the Application Program Interface(API). It provides an interface between a process and an operating system to allow user-level processes to request services of the operating system. System calls are the only entry points into the kernel system. All programs needing resources must use system calls. 
+What is a System Call?A system call is a mechanism used by programs to request services from the operating system (OS). In simpler terms, it is a way for a program to interact with the underlying system, such as accessing hardware resources or performing privileged operations.
+A user program can interact with the operating system using a system call. A number of services are requested by the program, and the OS responds by launching a number of systems calls to fulfill the request. A system call can be written in high-level languages like C or Pascal or in assembly language. If a high-level language is used, the operating system may directly invoke system calls, which are predefined functions.
+A system call is initiated by the program executing a specific instruction, which triggers a switch to kernel mode, allowing the program to request a service from the OS. The OS then handles the request, performs the necessary operations, and returns the result back to the program.
+System calls are essential for the proper functioning of an operating system, as they provide a standardized way for programs to access system resources. Without system calls, each program would need to implement its methods for accessing hardware and system services, leading to inconsistent and error-prone behavior.
+Services Provided by System CallsProcess Creation and ManagementMain Memory ManagementFile Access, Directory, and File System ManagementDevice Handling(I/O)ProtectionNetworking, etc.Process Control: end, abort, create, terminate, allocate, and free memory.File Management: create, open, close, delete, read files, etc.Device ManagementInformation MaintenanceCommunicationFeatures of System CallsInterface: System calls provide a well-defined interface between user programs and the operating system. Programs make requests by calling specific functions, and the operating system responds by executing the requested service and returning a result.Protection: System calls are used to access privileged operations that are not available to normal user programs. The operating system uses this privilege to protect the system from malicious or unauthorized access.Kernel Mode: When a system call is made, the program is temporarily switched from user mode to kernel mode. In kernel mode, the program has access to all system resources, including hardware, memory, and other processes.Context Switching: A system call requires a context switch, which involves saving the state of the current process and switching to the kernel mode to execute the requested service. This can introduce overhead, which can impact system performance.Error Handling: System calls can return error codes to indicate problems with the requested service. Programs must check for these errors and handle them appropriately.Synchronization: System calls can be used to synchronize access to shared resources, such as files or network connections. The operating system provides synchronization mechanisms, such as locks or semaphores, to ensure that multiple programs can access these resources safely.How does System Call Work?Here is a detailed explanation step by step how system calls work:
+Users need special resources: Sometimes programs need to do some special things that can’t be done without the permission of the OS like reading from a file, writing to a file, getting any information from the hardware, or requesting a space in memory. The program makes a system call request: There are special predefined instructions to make a request to the operating system. These instructions are nothing but just a “system call”. The program uses these system calls in its code when needed.Operating system sees the system call: When the OS sees the system call then it recognizes that the program needs help at this time so it temporarily stops the program execution and gives all the control to a special part of itself called ‘Kernel’. Now ‘Kernel’ solves the need of the program.The operating system performs the operations: Now the operating system performs the operation that is requested by the program. Example: reading content from a file etc.Operating system give control back to the program : After performing the special operation, OS give control back to the program for further execution of program .Examples of a System Call in Windows and UnixSystem calls for Windows and Unix come in many different forms. These are listed in the table below as follows:
+ProcessWindowsUnixProcess ControlCreateProcess()
+ExitProcess()
+WaitForSingleObject()
+Fork()
+Exit()
+Wait()
+File manipulationCreateFile()
+ReadFile()
+WriteFile()
+Open()
+Read()
+Write()
+Close()
+Device ManagementSetConsoleMode()
+ReadConsole()
+WriteConsole()
+Ioctl()
+Read()
+Write()
+Information MaintenanceGetCurrentProcessID()
+SetTimer()
+Sleep()
+Getpid()
+Alarm()
+Sleep()
+CommunicationCreatePipe()
+CreateFileMapping()
+MapViewOfFile()
+Pipe()
+Shmget()
+Mmap()
+ProtectionSetFileSecurity()
+InitializeSecurityDescriptor()
+SetSecurityDescriptorgroup()
+Chmod() 
+Umask()
+Chown()
+Open(): Accessing a file on a file system is possible with the open() system call. It gives the file resources it needs and a handle the process can use. A file can be opened by multiple processes simultaneously or just one process. Everything is based on the structure and file system.
+Read(): Data from a file on the file system is retrieved using it. In general, it accepts three arguments:
+A description of a file.A buffer for read data storage.How many bytes should be read from the fileBefore reading, the file to be read could be identified by its file descriptor and opened using the open() function.Wait(): In some systems, a process might need to hold off until another process has finished running before continuing. When a parent process creates a child process, the execution of the parent process is halted until the child process is complete. The parent process is stopped using the wait() system call. The parent process regains control once the child process has finished running.
+Write(): Data from a user buffer is written using it to a device like a file. A program can produce data in one way by using this system call. generally, there are three arguments:
+A description of a file.A reference to the buffer where data is stored.The amount of data that will be written from the buffer in bytes.Fork(): The fork() system call is used by processes to create copies of themselves. It is one of the methods used the most frequently in operating systems to create processes. When a parent process creates a child process, the parent process’s execution is suspended until the child process is finished. The parent process regains control once the child process has finished running.
+Exit(): A system call called exit() is used to terminate a program. In environments with multiple threads, this call indicates that the thread execution is finished. After using the exit() system function, the operating system recovers the resources used by the process.
+Methods to Pass Parameters to OSIf a system call occur, we have to pass parameter to the Kernal part of the Operating system. 
+For example look at the given open() system call:
+
+C
+
+//function call example
+
+#include <fcntl.h>
+
+int open(const char *pathname, int flags, mode_t mode);
+
+Here pathname, flags and mode_t are the parameters. 
+So it is to be noted that :
+We can’t pass the parameters directly like in an ordinary function call.In Kernal mode there is a different way to perform a function call. So we can’t run it in the normal address space that the process had already created and hence we cant place the parameters in the top of the stack because it is not available to the Kernal of the operating system for processing. so we have to adopt any other methods to pass the parameters to the Kernal of the OS. 
+We can done it through,
+ Passing parameters in registers  Address of the block is passed as a parameter in a register.  Parameters are pushed into a stack.Let us discuss about each points in detail:
+ 1. Passing Parameters in Registers It is the simplest method among the three Here we directly pass the parameters to registers.  But it will it is limited when, number of parameters are greater than the number of registers.  Here is the C program code:
+C
+
+// Passing parameters in registers. 
+
+#include <fcntl.h>
+#include <stdio.h>
+
+int main()
+{
+    const char* pathname = "example.txt";
+    int flags = O_RDONLY;
+    mode_t mode = 0644;
+
+    int fd = open(pathname, flags, mode);
+  // in function call open(), we passed the parameters pathanme,flags,mode to the kernal directly
+
+    if (fd == -1) {
+        perror("Error opening file");
+        return 1;
+    }
+
+    // File operations here...
+
+    close(fd);
+    return 0;
+}
+
+2. Address of The Block is Passed as Parameters It can be applied when the number of parameters are greater than the number of registers. Parameters are stored in blocks or table. The address of the block is passed to a register as a parameter.Most commonly used in Linux and Solaris. Here is the C program code:
+C
+
+//Address of the block is passed as parameters
+
+#include <stdio.h>
+#include <fcntl.h>
+
+int main() {
+    const char *pathname = "example.txt";
+    int flags = O_RDONLY;
+    mode_t mode = 0644;
+
+    int params[3];
+          // Block of data(parameters) in array
+    params[0] = (int)pathname;
+    params[1] = flags;
+    params[2] = mode;
+
+    int fd = syscall(SYS_open, params);
+          // system call
+
+    if (fd == -1) {
+        perror("Error opening file");
+        return 1;
+    }
+
+    // File operations here...
+
+    close(fd);
+    return 0;
+}
+
+3. Parameters Are Pushed in a Stack In this method parameters can be pushed in using the program and popped out using the operating systemSo the Kernal can easily access the data by retrieving information from the top of the stack.Here is the C program code
+C
+
+//parameters are pushed into the stack
+
+#include <stdio.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main() {
+    const char *pathname = "example.txt";
+    int flags = O_RDONLY;
+    mode_t mode = 0644;
+
+    int fd;
+    asm volatile(
+        "mov %1, %%rdi\n"
+        "mov %2, %%rsi\n"
+        "mov %3, %%rdx\n"
+        "mov $2, %%rax\n"
+        "syscall"
+        : "=a" (fd)
+        : "r" (pathname), "r" (flags), "r" (mode)
+        : "%rdi", "%rsi", "%rdx"
+    );
+
+    if (fd == -1) {
+        perror("Error opening file");
+        return 1;
+    }
+
+    // File operations here...
+
+    close(fd);
+    return 0;
+}
+
+Advantages of System CallsAccess to Hardware Resources: System calls allow programs to access hardware resources such as disk drives, printers, and network devices.Memory Management: System calls provide a way for programs to allocate and deallocate memory, as well as access memory-mapped hardware devices.Process Management: System calls allow programs to create and terminate processes, as well as manage inter-process communication.Security: System calls provide a way for programs to access privileged resources, such as the ability to modify system settings or perform operations that require administrative permissions.Standardization: System calls provide a standardized interface for programs to interact with the operating system, ensuring consistency and compatibility across different hardware platforms and operating system versions.Disadvantages of System CallPerformance Overhead: System calls involve switching between user mode and kernel mode, which can slow down program execution.Security Risks: Improper use or vulnerabilities in system calls can lead to security breaches or unauthorized access to system resources.Error Handling Complexity: Handling errors in system calls, such as resource allocation failures or timeouts, can be complex and require careful programming.Compatibility Challenges: System calls may vary between different operating systems, requiring developers to write code that works across multiple platforms.Resource Consumption: System calls can consume significant system resources, especially in environments with many concurrent processes making frequent calls.ConclusionIn conclusion, system calls are a important part of how computer programs interact with the operating system. They provide a way for applications to request services from the OS, such as accessing files, managing memory, or communicating over networks. System calls act as a bridge between user-level programs and the low-level operations handled by the operating system kernel. Understanding system calls is essential for developers to create efficient and functional software that can leverage the full capabilities of the underlying operating system.
+Frequently Asked Questions on System Call in Operating Systems – FAQsHow does a system call work?When a program executes a system call, it transitions from user mode to kernel mode, which is a higher privileged mode. The transition is typically initiated by invoking a specific function or interrupting instruction provided by the programming language or the operating system.
+Once in kernel mode, the system call is handled by the operating system. The kernel performs the requested operation on behalf of the program and returns the result. Afterward, control is returned to the user-level program, which continues its execution.
+Why do programs need to use system calls?Programs use system calls to interact with the underlying operating system and perform essential tasks that require privileged access or system-level resources.
+What are some examples of system calls?Examples include opening and closing files, reading and writing data, creating processes, allocating memory, and performing network operations like sending and receiving data.
+Why are system calls necessary?System calls are necessary as they enable applications to request essential services from the operating system, such as file access, memory management, and hardware control, ensuring secure and efficient interaction with computer resources.
+
+
+
+
+
+
+
+
+
+S
+
+
+
+
+ 
+
+Samit Mandal 
+
+
+
+
+
+ Follow 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+Improve
+
+
+
+
+
+
+
+
+Previous Article
+
+
+
+Operating System Services
+
+
+
+
+Next Article
+
+
+
+
+System Programs in Operating System
+
+
+
+
+
+
+Read More
+
+
+
+Similar Reads
+
+
+
+Difference Between System Call and library call
+For anyone dealing with computer programming especially when it comes to performance issues or dealing with operations systems, it is very important to know the difference between system calls and library calls. System calls can be said as a way through which programs can ask the Kernel of an operating system for a certain service on the other hand
+
+
+
+7 min read
+
+
+
+
+Xv6 Operating System -adding a new system call
+Prerequisite - Xv6 Operating System -add a user program In last post we got to know how to add user program in Xv6 Operating System. Now here you will see how to add new system call in Xv6 Operating System. A dding new system call to xv6: A system call is way for programs to interact with operating system. A computer program makes system call when
+
+
+
+6 min read
+
+
+
+
+Fork System Call in Operating System
+In many operating systems, the fork system call is an essential operation. The fork system call allows the creation of a new process. When a process calls the fork(), it duplicates itself, resulting in two processes running at the same time. The new process that is created is called a child process. It is a copy of the parent process. The fork syst
+
+
+
+5 min read
+
+
+
+
+
+Implementation of sleep (system call) in OS
+In this article, we are going to learn about sleep (system call) in operating systems. In the computer science field, a system call is a mechanism that provides the interface between a process and the operating system. In simple terms, it is basically a method in which a computer program requests a service from the kernel of the operating system. W
+
+
+
+4 min read
+
+
+
+
+Linux system call in Detail
+A system call is a procedure that provides the interface between a process and the operating system. It is the way by which a computer program requests a service from the kernel of the operating system. Different operating systems execute different system calls. In Linux, making a system call involves transferring control from unprivileged user mod
+
+
+
+4 min read
+
+
+
+
+Difference between system() and execl() call
+A system() call is a way for the programs to interact with the operating system. It is used to execute a command within a process. The system call provides the services of the operating system to the user programs via Application Program Interface (API). It provides an interface between a process and an operating system and it does not replace the
+
+
+
+4 min read
+
+
+
+
+What is System Call Interposition?
+Systеm calls Intеrposition is a valuablе approach that allows intеrcеption and modification of systеm calls madе in thе opеrating systеm. This tеchniquе makеs it еasiеr to еnforcе finе-grainеd sеcurity policiеs and intеgratе nеw capabilitiеs, rеsulting in a morе flеxiblе and adaptablе sеcurity modеl. While it may not be thе ultimatе solution for sy
+
+
+
+4 min read
+
+
+
+
+
+Code for Fork System Call in OS
+Fork is a system call in the Operating System used to create a copy of the process, the copied process created is known as the child process. The main process or the process from which the child process is created is known as the parent process. The parent and child processes are in separate address spaces in fork(). A Child process will have its P
+
+
+
+4 min read
+
+
+
+
+Remote Procedure Call (RPC) in Operating System
+Remote Procedure Call (RPC) is a powerful technique for constructing distributed, client-server based applications. It is based on extending the conventional local procedure calling so that the called procedure need not exist in the same address space as the calling procedure. The two processes may be on the same system, or they may be on different
+
+
+
+8 min read
+
+
+
+
+How much Stack size required for BIOS interrupt call?
+Stack: It is a linear data structure that follows the LIFO( Last In First Out ) order for performing the operations. BIOS: It provides a set of instructions and is responsible for booting the computer. The BIOS performs all the tests needed at startup time.Stack size required for bios interrupt calls?1) For No interrupts generated in task Formula F
+
+
+
+2 min read
+
+
+
+
+Fork Function Call
+In this article, we are going to see the fork function call in detail with the help of an example. A function call is an operating system call that is used to create a copy of a process which is also called a child process. This function call is used in a system that supports multitasking. Purpose of Fork()At its core, a function call is a fundamen
+
+
+
+3 min read
+
+
+
+
+Difference Between ISR and Function Call
+In embedded systems programming, or when working with microcontrollers, one has to distinguish between the terms "Interrupt Service Routine" and "function call". Generally, ISRs and function calls are used to execute some blocks of the code. But, they serve different purposes and, in some cases, may run under different conditions. In this article,
+
+
+
+7 min read
+
+
+
+
+Function Call Stack in C
+A function in C is a set of code that performs a specific task and can be used whenever needed just by calling it. But how the function call works and how the data of the function is stored in the memory is an area of interest for a better understanding of the concepts such as recursion. What is a Call Stack in C?A call stack in C is the stack that
+
+
+
+4 min read
+
+
+
+
+
+Introduction To Mobile Operating System - PALM OS
+PALM OS is an operating system for personal digital assistants, designed for touchscreen. It consists of a limited number of features designed for low memory and processor usage which in turn helps in getting longer battery life. Features of PALM OSElementary memory management system.Provides PALM Emulator.Handwriting recognition is possible.Suppor
+
+
+
+2 min read
+
+
+
+
+Introduction of Basic Input Output System (BIOS)
+When a computer system is turned on it requires a series of initialization and test before the user can work on it. This process is called booting. Basic Input Output System (BIOS) : It provides a set of instructions and is responsible for booting the computer. The BIOS performs all the test needed at startup time. These tests are collectively know
+
+
+
+3 min read
+
+
+
+
+Introduction of Deadlock in Operating System
+A deadlock is a situation where a set of processes is blocked because each process is holding a resource and waiting for another resource acquired by some other process. In this article, we will discuss deadlock, its necessary conditions, etc. in detail. What is Deadlock?Deadlock is a situation in computing where two or more processes are unable to
+
+
+
+11 min read
+
+
+
+
+Introduction of Operating System - Set 1
+An operating system acts as an intermediary between the user of a computer and computer hardware. In short its an interface between computer hardware and user. The purpose of an operating system is to provide an environment in which a user can execute programs conveniently and efficiently. An operating system is software that manages computer hardw
+
+
+
+15 min read
+
+
+
+
+
+System Protection in Operating System
+Introduction: System protection in an operating system refers to the mechanisms implemented by the operating system to ensure the security and integrity of the system. System protection involves various techniques to prevent unauthorized access, misuse, or modification of the operating system and its resources. There are several ways in which an op
+
+
+
+3 min read
+
+
+
+
+Allocating kernel memory (buddy system and slab system)
+Prerequisite - Buddy System Introduction: Allocating kernel memory is a critical task in operating system design, as the kernel needs to manage memory efficiently and effectively to ensure optimal system performance. Two common methods for allocating kernel memory are the buddy system and the slab system. The buddy system is a memory allocation alg
+
+
+
+9 min read
+
+
+
+
+User View Vs Hardware View Vs System View of Operating System
+User View of Operating System: The Operating System is an interface, hides the details which must be performed and present a virtual machine to the user that makes it easier to use. Operating System provides the following services to the user. Execution of a programAccess to I/O devicesControlled access to filesError detection (Hardware failures, a
+
+
+
+1 min read
+
+
+
+
+Traps and System Calls in Operating System (OS)
+Traps and system calls are two mechanisms used by an operating system (OS) to perform privileged operations and interact with user-level programs. Here is an overview of each mechanism: Traps: A trap is an interrupt generated by the CPU when a user-level program attempts to execute a privileged instruction or encounters an error. When a trap occurs
+
+
+
+3 min read
+
+
+
+
+Difference between Batch Processing System and Online Processing System
+Prerequisite - Types of Operating System 1. Batch Processing System : An Batch processing system handles large amounts of data which processed on a routine schedule. Processing occurs after the economic event occurs and is recorded. It requires fewer programming, hardware, and training resources. In this system programs are scheduled through jobs.
+
+
+
+3 min read
+
+
+
+
+System Programs in Operating System
+System Programming can be defined as the act of building Systems Software using System Programming Languages. According to Computer Hierarchy, Hardware comes first then is Operating System, System Programs, and finally Application Programs. Program Development and Execution can be done conveniently in System Programs. Some of the System Programs ar
+
+
+
+3 min read
+
+
+
+
+
+File System Implementation in Operating System
+A file is a collection of related information. The file system resides on secondary storage and provides efficient and convenient access to the disk by allowing data to be stored, located, and retrieved. File system implementation in an operating system refers to how the file system manages the storage and retrieval of data on a physical storage de
+
+
+
+11 min read
+
+
+
+
+Difference between Local File System (LFS) and Distributed File System (DFS)
+In computers, file systems are essential components that help in managing how data will be stored and retrieved. It provides a structural way to store, organize and manage data on various storage devices such as USBs, hard drives, SSDs, etc. Different file systems have been created to meet the increasing demand for data processing and storage. The
+
+
+
+4 min read
+
+
+
+
+Difference between System Software and Operating System
+Software is like a set of instructions that tell a computer what to do. There are two main types application software and system software. Application software is extra programs you can add to your computer to do specific things, like write documents or play games. You don't need these to use your computer, but they help you do particular tasks. Sy
+
+
+
+5 min read
+
+
+
+
+Introduction to Multi-threaded Architectures and Systems in OS
+According to me, multithreaded architecture is actually a trend and reliable and easy to applicable solution for upcoming microprocessor design, so I studied four research papers on this topic just to familiarize myself with the technology involved in this subject. In today’s world, there is a rapid progress of Very Large Scale Integrated circuit(V
+
+
+
+5 min read
+
+
+
+
+
+Introduction To Malware Analysis
+Malware is an executable binary that is malicious in nature. Malware's can be used by attackers to perform variety of malicious actions like Spying on the target using Keyloggers or RAT'S, they can also delete your data or encrypt your data for "Ransom". Types of Malware: Malware is designed to perform malicious actions and they have different func
+
+
+
+4 min read
+
+
+
+
+Introduction of Window XP / Vista
+Window XP/VISTA : As we know in a system an operating system is required and window XP is the most developed operating system of its time, it was originated by the Microsoft company of America in 2004, it was about 64 bit, one user-defined and multitasking operating system in which networks, facts, E-mail, multimedia was present in a newer form. It
+
+
+
+5 min read
+
+
+
+
+Introduction To Post-Exploitation Phase
+Introduction:-In this article, we are going to learn about different stages of the post-exploitation phase. This is the phase prior to the last phase (clearing tracks and setting up records) of our penetration testing process. In this phase, we exploit our targets further, escalating privileges and penetrating the internal network even more. Meterp
+
+
+
+6 min read
+
+
+
+
+
+
+Article Tags : 
+
+
+Operating Systems
+ 
+
+
+
+
+
+
+Like
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Please Login to comment...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+76k+ interested Geeks 
+
+
+
+Core Computer Science Subject for Interview Preparation 
+
+
+
+
+Explore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+308k+ interested Geeks 
+
+
+
+Tech Interview 101 - From DSA to System Design for Working Professionals 
+
+
+
+
+Explore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+31k+ interested Geeks 
+
+
+
+GATE Computer Science & Information Technology - 2025 
+
+
+
+
+Explore
+
+
+
+
+
+
+ 
+
+
+
+
+Explore More
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      Corporate & Communications Address:- A-143, 9th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305) | Registered Address:- K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CompanyAbout UsLegalCareersIn MediaContact UsAdvertise with usGFG Corporate SolutionPlacement Training ProgramExploreJob-A-Thon Hiring ChallengeHack-A-ThonGfG Weekly ContestOffline Classes (Delhi/NCR)DSA in JAVA/C++Master System DesignMaster CPGeeksforGeeks VideosGeeks CommunityLanguagesPythonJavaC++PHPGoLangSQLR LanguageAndroid TutorialDSAData StructuresAlgorithmsDSA for BeginnersBasic DSA ProblemsDSA RoadmapDSA Interview QuestionsCompetitive ProgrammingData Science & MLData Science With PythonData Science For BeginnerMachine LearningML MathsData VisualisationPandasNumPyNLPDeep LearningWeb TechnologiesHTMLCSSJavaScriptTypeScriptReactJSNextJSNodeJsBootstrapTailwind CSSPython TutorialPython Programming ExamplesDjango TutorialPython ProjectsPython TkinterWeb ScrapingOpenCV TutorialPython Interview QuestionComputer ScienceGATE CS NotesOperating SystemsComputer NetworkDatabase Management SystemSoftware EngineeringDigital Logic DesignEngineering MathsDevOpsGitAWSDockerKubernetesAzureGCPDevOps RoadmapSystem DesignHigh Level DesignLow Level DesignUML DiagramsInterview GuideDesign PatternsOOADSystem Design BootcampInterview QuestionsSchool SubjectsMathematicsPhysicsChemistryBiologySocial ScienceEnglish GrammarCommerceAccountancyBusiness StudiesEconomicsManagementHR ManagementFinanceIncome TaxDatabasesSQLMYSQLPostgreSQLPL/SQLMongoDBPreparation CornerCompany-Wise Recruitment ProcessResume TemplatesAptitude PreparationPuzzlesCompany-Wise PreparationCompaniesCollegesCompetitive ExamsJEE AdvancedUGC NETUPSCSSC CGLSBI POSBI ClerkIBPS POIBPS ClerkMore TutorialsSoftware DevelopmentSoftware TestingProduct ManagementProject ManagementLinuxExcelAll Cheat SheetsRecent ArticlesFree Online ToolsTyping TestImage EditorCode FormattersCode ConvertersCurrency ConverterRandom Number GeneratorRandom Password GeneratorWrite & EarnWrite an ArticleImprove an ArticlePick Topics to WriteShare your ExperiencesInternships 
+
+
+
+
+
+
+@GeeksforGeeks, Sanchhaya Education Private Limited, All rights reserved
+
+
+
+
+
+
+
+
+
+
+        We use cookies to ensure you have the best browsing experience on our website. By using our site, you
+        acknowledge that you have read and understood our
+        Cookie Policy &
+        Privacy Policy
+
+
+        Got It !
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Improvement
+
+
+
+
+
+Please go through our recently updated Improvement Guidelines before submitting any improvements.
+This improvement is locked by another user right now. You can suggest the changes for now and it will be under 'My Suggestions' Tab on Write.
+You will be notified via email once the article is available for improvement.
+                        Thank you for your valuable feedback!
+                    
+
+Suggest changes
+
+
+
+Please go through our recently updated Improvement Guidelines before submitting any improvements.
+
+
+Suggest Changes
+Help us improve. Share your suggestions to enhance the article. Contribute your expertise and make a difference in the GeeksforGeeks portal.
+
+
+
+
+
+
+
+Create Improvement
+Enhance the article with your expertise. Contribute to the GeeksforGeeks community and help create better learning resources for all.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Suggest Changes
+
+
+
+
+
+
+
+min 4 words, max CharLimit:2000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Create Improvement
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What kind of Experience do you want to share?
+
+
+
+
+
+
+
+
+
+Interview Experiences
+
+
+
+
+
+
+
+Admission Experiences
+
+
+
+
+
+
+
+Career Journeys
+
+
+
+
+
+
+
+Work Experiences
+
+
+
+
+
+
+
+Campus Experiences
+
+
+
+
+
+
+
+Competitive Exam Experiences
+
+
+
+
+
+
+                        Can't choose a topic to write? click here for suggested topics
+                    
+
+
+
+                       Write and publish your own Article
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

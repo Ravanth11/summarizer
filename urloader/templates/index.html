@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Summarizer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #007bff, #0056b3);
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            width: 100%;
+            max-width: 600px; /* Max width for larger screens */
+            animation: slideIn 0.5s ease-in-out; /* Animation effect */
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 2.5rem; /* Main title size */
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            transition: transform 0.3s; /* Hover effect */
+        }
+
+        .input-group:hover {
+            transform: scale(1.02); /* Slight scale on hover */
+        }
+
+        .input-group input {
+            border-radius: 5px 0 0 5px;
+            border: 1px solid #ced4da;
+        }
+
+        .input-group .btn {
+            border-radius: 0 5px 5px 0;
+            background-color: #007bff;
+            border: none;
+            transition: background-color 0.3s; /* Button hover effect */
+        }
+
+        .input-group .btn:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #333;
+            background-color: #f8f9fa; /* Light background for result */
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1>URL Summarizer</h1>
+        <p>Enter a URL below and a question to receive a concise summary of its content.</p>
+        <div class="input-group mb-3">
+            <input type="text" id="urlInput" class="form-control" placeholder="Enter URL here..." aria-label="URL input" required>
+            <input type="text" id="questionInput" class="form-control" placeholder="Enter your question here..." aria-label="Question input" required>
+            <div class="input-group-append">
+                <button class="btn btn-primary" onclick="handleSubmit()"><i class="fas fa-paper-plane"></i> Summarize</button>
+            </div>
+        </div>
+        <div id="result" class="alert alert-light"></div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 URL Summarizer. All rights reserved.</p>
+    </div>
+
+    <script>
+        async function handleSubmit() {
+            const url = document.getElementById('urlInput').value;
+            const question = document.getElementById('questionInput').value;
+            const resultDiv = document.getElementById('result');
+            if (url && question) {
+                try {
+                    const response = await fetch('/fetch-url/', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRFToken': getCookie('csrftoken')
+                        },
+                        body: JSON.stringify({ url: url, question: question })
+                    });
+
+                    if (response.ok) {
+                        const result = await response.json();
+                        resultDiv.innerText = result.answer || 'No answer available.';
+                        resultDiv.style.display = 'block';
+                    } else {
+                        alert('Failed to fetch content.');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                }
+            } else {
+                alert('Please enter a URL and a question.');
+            }
+        }
+
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+    </script>
+</body>
+
+</html>

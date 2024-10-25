@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GenAI URL Loader</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #2c3e50, #3498db);
+      color: white;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      padding: 100px 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #ecf0f1;
+    }
+    .input-container {
+      margin: 20px 0;
+    }
+    input {
+      padding: 10px;
+      font-size: 1.2em;
+      border-radius: 5px;
+      border: none;
+      width: 60%;
+      max-width: 600px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    #output {
+      margin-top: 40px;
+      font-size: 1.5em;
+      white-space: pre-wrap;
+    }
+    canvas {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>GenAI URL Question Answering</h1>
+    <div class="input-container">
+      <input type="text" id="urlInput" placeholder="Enter a URL" />
+      <button onclick="fetchData()">Fetch & Ask</button>
+    </div>
+    <div id="output"></div>
+  </div>
+
+  <canvas id="bgCanvas"></canvas>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script>
+    function fetchData() {
+      const url = document.getElementById('urlInput').value;
+      document.getElementById('output').innerText = 'Fetching content from the URL...';
+
+      // Fetch content from the URL (assuming CORS is handled on the server-side)
+      fetch(`/api/genai`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url })
+      })
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('output').innerText = `Response: ${data.answer}`;
+      })
+      .catch(err => {
+        document.getElementById('output').innerText = 'Error fetching content.';
+        console.error(err);
+      });
+    }
+
+    // Three.js for background effect
+    let scene = new THREE.Scene();
+    let camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    let renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('bgCanvas') });
+
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    camera.position.z = 5;
+
+    // Create a pulsating sphere with color changes
+    let geometry = new THREE.SphereGeometry(3, 32, 32);
+    let material = new THREE.MeshBasicMaterial({ color: 0x44aa88 });
+    let sphere = new THREE.Mesh(geometry, material);
+    scene.add(sphere);
+
+    let colorChangeSpeed = 0.01;
+    let scaleChangeSpeed = 0.02;
+    let time = 0;
+
+    function animate() {
+      requestAnimationFrame(animate);
+
+      // Pulsating effect
+      let scale = Math.sin(time) * 0.5 + 1;
+      sphere.scale.set(scale, scale, scale);
+
+      // Color changing effect
+      let color = new THREE.Color(`hsl(${(time * 100) % 360}, 100%, 75%)`);
+      sphere.material.color.set(color);
+
+      time += 0.05;
+
+      renderer.render(scene, camera);
+    }
+
+    animate();
+
+    window.addEventListener('resize', () => {
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+    });
+  </script>
+</body>
+</html>
