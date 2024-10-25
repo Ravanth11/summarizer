@@ -23,7 +23,7 @@
             color: #333;
             text-align: center;
         }
-        .summary-content, .translated-content {
+        .summary-content {
             font-size: 16px;
             line-height: 1.6;
             color: #555;
@@ -47,12 +47,7 @@
     <div class="container">
         <h1>Summary Result</h1>
         <div class="summary-content">
-            <h2>Original Summary:</h2>
             <p>{{ summary }}</p>
-        </div>
-        <div class="translated-content">
-            <h2>Translated Summary:</h2>
-            <p>{{ translated_summary }}</p>
         </div>
         <a href="{% url 'index' %}">Back to Home</a> <!-- Link to go back to the main page -->
     </div>
