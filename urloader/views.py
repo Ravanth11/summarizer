@@ -10,9 +10,10 @@ from transformers import BartForConditionalGeneration, BartTokenizer
 from transformers import BartForConditionalGeneration, BartTokenizer
 
 
-from transformers import MBartForConditionalGeneration, MBart50TokenizerFast, pipeline
+
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
+
 
 
 
@@ -97,9 +98,9 @@ def summary(request):
     """
 
     # Initialize Google Generative AI model
-    model = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.4, google_api_key=google_api_key)
+    qa_model = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.4, google_api_key=google_api_key)
     prompt = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
-    chain = load_qa_chain(model, chain_type="stuff", prompt=prompt)
+    chain = load_qa_chain(qa_model, chain_type="stuff", prompt=prompt)
 
     # Getting the question from the user input (request parameter)
     question = request.GET.get('question', 'What is a system call?')
@@ -127,40 +128,5 @@ def summary(request):
         summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
         answer += "\n\nGenerated Summary/Insight: " + summary
 
-    # Language translation logic
-    target_language = request.GET.get('target_language', 'english')  # Default to English
-    if target_language:
-        language_codes = {
-            "english": "en_XX",
-            "hindi": "hi_IN",
-            "tamil": "ta_IN",
-            "malayalam": "ml_IN"
-        }
-
-        if target_language in language_codes:
-            # Load the mBART model and tokenizer for translation
-            translation_model = MBartForConditionalGeneration.from_pretrained("facebook/mbart-large-50-many-to-many-mmt")
-            translation_tokenizer = MBart50TokenizerFast.from_pretrained("facebook/mbart-large-50-many-to-many-mmt")
-
-            # Set the target language for translation
-            translation_tokenizer.src_lang = "en_XX"  # Assuming summary is in English
-            encoded_summary = translation_tokenizer(summary, return_tensors="pt")
-
-            # Generate the translation to the specified target language
-            generated_tokens_target = translation_model.generate(
-                **encoded_summary,
-                forced_bos_token_id=translation_tokenizer.lang_code_to_id[language_codes[target_language]],
-                max_length=100,
-                num_beams=5,
-                repetition_penalty=2.5
-            )
-
-            # Decode the translated text to the target language
-            translated_summary = translation_tokenizer.batch_decode(generated_tokens_target, skip_special_tokens=True)[0]
-        else:
-            translated_summary = "Target language not supported."
-    else:
-        translated_summary = summary  # If no target language is selected, show the original summary
-
-    # Render the summary_display.html template with the generated summary and translated summary
-    return render(request, 'summary_display.html', {'summary': summary, 'translated_summary': translated_summary})
+    # Render the summary_display.html template with the generated answer and summary
+    return render(request, 'summary_display.html', {'answer': answer, 'summary': summary})
