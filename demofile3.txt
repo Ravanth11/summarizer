@@ -94,7 +94,7 @@ Skip to content
 
 
 
-CoursesDSA to DevelopmentNewly Launched!Android with KotlinGenerative AI & ChatGPTMaster Django FrameworkBecome AWS CertifiedFor Working ProfessionalsInterview 101: DSA & System DesignData Science Training ProgramJAVA Backend Development (Live)DevOps Engineering (LIVE)Software Testing & Automation (Live)Data Structures & Algorithms in PythonFor StudentsPlacement Preparation CourseData Science (Live)Data Structure & Algorithm-Self Paced (C++/JAVA)Master Competitive Programming (Live)Full Stack Development with React & Node JS (Live)GATE Exam CoursesGATE CS & IT (Self-Paced)GATE DS & AI (Self-Paced)All CoursesTutorialsData Structures & AlgorithmsDSA for BeginnersData StructuresArraysMatrixStringsLinked ListStackQueueTreeGeneric TreeBinary TreeBinary Search TreeAVL TreeB TreeB+ TreeRed Black TreeTree Data Structure TutorialHeapHashingGraphSet Data StructureMap Data StructureAdvanced Data StructureData Structures TutorialAlgorithmsAnalysis of AlgorithmsSearching AlgorithmsLinear SearchBinary SearchSearching Algorithms TutorialSorting AlgorithmsSelection SortBubble SortInsertion SortMerge SortQuick SortHeap SortCounting SortRadix SortBucket SortSorting Algorithms TutorialGreedy AlgorithmsDynamic ProgrammingGraph AlgorithmsPattern SearchingRecursionBacktrackingDivide and ConquerMathematical AlgorithmsGeometric AlgorithmsBitwise AlgorithmsRandomized AlgorithmsBranch and BoundAlgorithms TutorialComplete DSA TutorialCompetitive ProgrammingCompany Wise SDE SheetsFacebook SDE SheetAmazon SDE SheetApple SDE SheetNetflix SDE SheetGoogle SDE SheetWipro Coding SheetInfosys Coding SheetTCS Coding SheetCognizant Coding SheetHCL Coding SheetDSA Cheat SheetsDSA Sheet for BeginnersSDE SheetsFAANG Coding SheetLove Babbaar SheetMass Recruiter SheetProduct-Based Coding SheetCompany-Wise Preparation SheetTop 100 DSA Interview Questions Topic-wise100 Days of CodePythonPython TutorialPython ExercisesPython List ExercisePython String ExercisePython Tuple ExercisePython Dictionary ExercisePython Set ExercisePython Excercises Topic wisePython QuizPython ProgramsAdvanced Python TutorialPython API TutorialPython Database TutorialPython JSONPython Cheat SheetPython ProjectsPython Interview QuestionsML & Data ScienceMachine LearningMachine Learning TutorialMaths for MLML Projects100 Days of Machine LearningData Science TutorialData Science PackagesPandas TutorialNumPy TutorialData VisualizationData Visualization with PythonData Visualization with RTableauPower BIData AnalysisData Analysis with PythonData Analysis with R100 Days of Data AnalyticsDeep LearningNLP TutorialOpenCV TutorialInterview QuestionsMachine Learning Interview QuestionsDeep Learning Interview QuestionsR Interview QuestionsSystem DesignSystem Design TutorialSoftware Design PatternsSystem Design RoadmapTop 10 System Design Interview QuestionsInterview CornerCompany PreparationTop TopicsPractice Company QuestionsInterview ExperiencesExperienced InterviewsInternship InterviewsCompetitive ProgrammingMultiple Choice QuizzesAptitude for PlacementsPuzzles for InterviewsLanguagesCC++JavaPythonR TutorialC#SQLScalaPerlGo LanguageWeb DevelopmentHTMLHTML TutorialFree HTML CourseHTML Cheat SheetCSSCSS TutorialFree CSS CourseCSS Cheat SheetJavaScriptJavaScript TutorialJavaScript QuestionsJavaScript Cheat SheetDSA using JavaScriptFree JavaScript CourseJavaScript A to Z Complete GuideTypeScriptReactJSReactJS TutorialFree ReactJS CourseReactJS Cheat SheetNextJSNode.jsPHPAngularJSjQueryWeb Development Using PythonDjangoFlaskSeleniumPostmanGithubWeb Design100 Days of Web DevelopmentCS SubjectsOperating SystemDBMSComputer NetworksEngineering MathematicsComputer Organization and ArchitectureTheory of ComputationCompiler DesignDigital LogicSoftware EngineeringDevOps And LinuxDevOps TutorialGITAWSKubernetesDockerMicrosoft Azure TutorialGoogle Cloud PlatformDevOps RoadmapDevOps Interview QuestionsLinuxLinux TutorialLinux Commands A-ZLinux Commands CheatsheetFile Permissions in LinuxLinux System AdministrationLinux Shell ScriptingLinux NetworkingLinux Interview QuestionsSchool LearningClass 8 Study MaterialClass 9 Study MaterialClass 10 Study MaterialClass 11Study MaterialClass 12 Study MaterialEnglish GrammarGfG SchoolCommerceGATEGATE Computer Science NotesLast Minute NotesGATE CS Solved PapersGATE CS Original Papers and Official KeysGATE CS 2025 SyllabusGATE DA 2025 SyllabusOther CS ExamsISROUGC NETGeeksforGeeks VideosJobsGet Hired: Apply for JobsCorporate Hiring SolutionsFiltered JobsJobs for FreshersJobs for ExperiencedAll JobsPracticePractice Coding ProblemsAll DSA ProblemsProblem of the DayCompany Wise Coding PracticeAmazonMicrosoftFlipkartExplore AllGfG SDE SheetPractice Problems Difficulty WiseBasicEasyMediumHardLanguage Wise Coding PracticeCPPJavaPythonCurated DSA ListsBeginner's DSA SheetLove Babbar SheetTop 50 Array ProblemsTop 50 String ProblemsTop 50 DP ProblemsTop 50 Graph ProblemsTop 50 Tree ProblemsContestsJob-A-Thon Hiring ChallengeGfG Weekly [Rated Contest]All Contests and Events
+CoursesDSA to DevelopmentNewly Launched!Android with KotlinGenerative AI & ChatGPTMaster Django FrameworkBecome AWS CertifiedFor Working ProfessionalsInterview 101: DSA & System DesignData Science Training ProgramJAVA Backend Development (Live)DevOps Engineering (LIVE)Software Testing & Automation (Live)Data Structures & Algorithms in PythonFor StudentsPlacement Preparation CourseData Science (Live)Data Structure & Algorithm-Self Paced (C++/JAVA)Master Competitive Programming (Live)Full Stack Development with React & Node JS (Live)GATE Exam CoursesGATE CS & IT (Self-Paced)GATE DS & AI (Self-Paced)Full StackData ScienceAll CoursesTutorialsData Structures & AlgorithmsData StructuresArraysMatrixStringsLinked ListSingly Linked ListDoubly Linked ListCircular Linked ListLinked List GuideStackQueueBinary TreeBinary Search TreeHeapHashingGraphAdvanced Data StructureAlgorithmsAnalysis of AlgorithmsSearching AlgorithmsSorting AlgorithmsGreedy AlgorithmsDynamic ProgrammingGraph AlgorithmsPattern SearchingRecursionBacktrackingDivide and ConquerMathematical AlgorithmsGeometric AlgorithmsBitwise AlgorithmsRandomized AlgorithmsComplete DSA TutorialCompany Wise SDE SheetsFacebook SDE SheetAmazon SDE SheetApple SDE SheetNetflix SDE SheetGoogle SDE SheetWipro Coding SheetInfosys Coding SheetTCS Coding SheetCognizant Coding SheetHCL Coding SheetDSA Cheat SheetsTop 75 DSA QuestionsBlind 75DSA Sheet for BeginnersSDE SheetsFAANG Coding SheetLove Babbaar SheetMass Recruiter SheetProduct-Based Coding SheetCompetitive ProgrammingPythonPython TutorialPython ExercisesPython List ExercisePython String ExercisePython Tuple ExercisePython Dictionary ExercisePython Set ExercisePython Excercises Topic wisePython QuizPython ProgramsAdvanced Python TutorialPython API TutorialPython Database TutorialPython JSONPython Cheat SheetPython ProjectsPython Interview QuestionsML & Data ScienceMachine LearningMachine Learning TutorialMaths for MLML Projects100 Days of Machine LearningData Science TutorialData Science PackagesPandas TutorialNumPy TutorialData VisualizationData Visualization with PythonData Visualization with RTableauPower BIData AnalysisData Analysis with PythonData Analysis with R100 Days of Data AnalyticsDeep LearningNLP TutorialOpenCV TutorialInterview QuestionsMachine Learning Interview QuestionsDeep Learning Interview QuestionsR Interview QuestionsSystem DesignSystem Design TutorialSoftware Design PatternsSystem Design RoadmapTop 10 System Design Interview QuestionsInterview CornerCompany PreparationTop TopicsPractice Company QuestionsInterview ExperiencesExperienced InterviewsInternship InterviewsCompetitive ProgrammingMultiple Choice QuizzesAptitude for PlacementsPuzzles for InterviewsLanguagesCC++JavaPythonR TutorialC#SQLScalaPerlGo LanguageWeb DevelopmentHTMLHTML TutorialFree HTML CourseHTML Cheat SheetCSSCSS TutorialCSS Cheat SheetJavaScriptJavaScript TutorialJavaScript QuestionsJavaScript Cheat SheetDSA using JavaScriptJavaScript A to Z Complete GuideTypeScriptReactJSReactJS TutorialReactJS Cheat SheetNextJSNode.jsPHPAngularJSjQueryWeb Development Using PythonDjangoFlaskSeleniumPostmanGithubWeb Design100 Days of Web DevelopmentCS SubjectsOperating SystemDBMSComputer NetworksEngineering MathematicsComputer Organization and ArchitectureTheory of ComputationCompiler DesignDigital LogicSoftware EngineeringDevOps And LinuxDevOps TutorialGITAWSKubernetesDockerMicrosoft Azure TutorialGoogle Cloud PlatformDevOps RoadmapDevOps Interview QuestionsLinuxLinux TutorialLinux Commands A-ZLinux Commands CheatsheetFile Permissions in LinuxLinux System AdministrationLinux Shell ScriptingLinux NetworkingLinux Interview QuestionsSchool LearningClass 8 Study MaterialClass 9 Study MaterialClass 10 Study MaterialClass 11Study MaterialClass 12 Study MaterialEnglish GrammarGfG SchoolCommerceGATEGATE Computer Science NotesLast Minute NotesGATE CS Solved PapersGATE CS Original Papers and Official KeysGATE CS 2025 SyllabusGATE DA 2025 SyllabusOther CS ExamsISROUGC NETGeeksforGeeks VideosJobsGet Hired: Apply for JobsCorporate Hiring SolutionsPracticePractice Coding ProblemsAll DSA ProblemsProblem of the DayCompany Wise Coding PracticeAmazonMicrosoftFlipkartExplore AllGfG SDE SheetPractice Problems Difficulty WiseBasicEasyMediumHardLanguage Wise Coding PracticeCPPJavaPythonCurated DSA ListsBeginner's DSA SheetLove Babbar SheetTop 50 Array ProblemsTop 50 String ProblemsTop 50 DP ProblemsTop 50 Graph ProblemsTop 50 Tree ProblemsContestsJob-A-Thon Hiring ChallengeGfG Weekly [Rated Contest]All Contests and Events
 
 
 
@@ -950,8 +950,7 @@ Like
 
 
 
-  Please Login to comment...
-
+ 
 
 
 
@@ -1022,11 +1021,11 @@ Explore
 
 
 
-308k+ interested Geeks 
+33k+ interested Geeks 
 
 
 
-Tech Interview 101 - From DSA to System Design for Working Professionals 
+GATE Computer Science & Information Technology - 2025 
 
 
 
@@ -1048,11 +1047,11 @@ Explore
 
 
 
-31k+ interested Geeks 
+309k+ interested Geeks 
 
 
 
-GATE Computer Science & Information Technology - 2025 
+Tech Interview 101 - From DSA to System Design for Working Professionals 
 
 
 
@@ -1204,17 +1203,12 @@ Improvement
 
 
 
-Please go through our recently updated Improvement Guidelines before submitting any improvements.
-This improvement is locked by another user right now. You can suggest the changes for now and it will be under 'My Suggestions' Tab on Write.
-You will be notified via email once the article is available for improvement.
-                        Thank you for your valuable feedback!
-                    
+
 
 Suggest changes
 
 
 
-Please go through our recently updated Improvement Guidelines before submitting any improvements.
 
 
 Suggest Changes
@@ -1242,6 +1236,7 @@ Enhance the article with your expertise. Contribute to the GeeksforGeeks communi
 
 
 
+
 Suggest Changes
 
 
@@ -1251,24 +1246,6 @@ Suggest Changes
 
 
 min 4 words, max CharLimit:2000
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Create Improvement
-
 
 
 
@@ -1354,17 +1331,6 @@ Campus Experiences
 Competitive Exam Experiences
 
 
-
-
-
-
-                        Can't choose a topic to write? click here for suggested topics
-                    
-
-
-
-                       Write and publish your own Article
-                    
 
 
 
