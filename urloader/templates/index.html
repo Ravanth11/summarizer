@@ -1,161 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URL Summarizer</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        body {
-            background: linear-gradient(to bottom right, #007bff, #0056b3);
-            color: #fff;
-            font-family: 'Arial', sans-serif;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container {
-            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            padding: 40px;
-            width: 100%;
-            max-width: 600px; /* Max width for larger screens */
-            animation: slideIn 0.5s ease-in-out; /* Animation effect */
-        }
-
-        @keyframes slideIn {
-            from {
-                transform: translateY(-30px);
-                opacity: 0;
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>URL Summarizer</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
             }
 
-            to {
-                transform: translateY(0);
-                opacity: 1;
+            body {
+                margin: 0;
+                overflow: hidden;
+                font-family: "Poppins", sans-serif;
+                color: #ffffff;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #0e0b16;
             }
-        }
 
-        h1 {
-            color: #007bff;
-            font-size: 2.5rem; /* Main title size */
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
+            .container {
+                position: relative;
+                z-index: 10;
+                background-color: rgba(14, 11, 22, 0.95);
+                border: 1px solid #1f1b2e;
+                border-radius: 15px;
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+                padding: 40px;
+                max-width: 700px;
+                width: 100%;
+                text-align: center;
+                backdrop-filter: blur(5px);
+            }
 
-        .input-group {
-            margin-bottom: 20px;
-            transition: transform 0.3s; /* Hover effect */
-        }
+            h1 {
+                color: #ff2e63;
+                font-size: 3rem;
+                margin-bottom: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
 
-        .input-group:hover {
-            transform: scale(1.02); /* Slight scale on hover */
-        }
+            p {
+                color: #c5c6c7;
+                font-size: 1rem;
+                margin-bottom: 30px;
+            }
 
-        .input-group input {
-            border-radius: 5px 0 0 5px;
-            border: 1px solid #ced4da;
-        }
+            .input-group {
+                gap: 15px;
+                margin-bottom: 25px;
+            }
 
-        .input-group .btn {
-            border-radius: 0 5px 5px 0;
-            background-color: #007bff;
-            border: none;
-            transition: background-color 0.3s; /* Button hover effect */
-        }
+            .input-group input,
+            .input-group select {
+                border-radius: 5px;
+                border: 1px solid #393e46;
+                background-color: #232931;
+                color: #fff;
+                padding: 12px;
+                font-size: 1rem;
+                transition: border 0.3s;
+                width: 100%;
+                height: 60px;
+            }
 
-        .input-group .btn:hover {
-            background-color: #0056b3;
-        }
+            .input-group input:focus,
+            .input-group select:focus {
+                border-color: #ff2e63;
+                outline: none;
+            }
 
-        #result {
-            margin-top: 20px;
-            font-size: 1.2rem;
-            color: #333;
-            background-color: #f8f9fa; /* Light background for result */
-            padding: 15px;
-            border-radius: 5px;
-            display: none;
-        }
+            .btn-wrapper {
+                margin-top: 20px;
+            }
 
-        .footer {
-            position: absolute;
-            bottom: 20px;
-            width: 100%;
-            text-align: center;
-            color: #ddd;
-        }
-    </style>
-</head>
+            .btn {
+                border-radius: 5px;
+                background-color: #ff2e63;
+                border: none;
+                color: #fff;
+                font-size: 1rem;
+                font-weight: 600;
+                padding: 12px 30px;
+                transition: background-color 0.3s, transform 0.3s;
+            }
 
-<body>
-    <div class="container text-center">
-        <h1>URL Summarizer</h1>
-        <p>Enter a URL below and a question to receive a concise summary of its content.</p>
-        <div class="input-group mb-3">
-            <input type="text" id="urlInput" class="form-control" placeholder="Enter URL here..." aria-label="URL input" required>
-            <input type="text" id="questionInput" class="form-control" placeholder="Enter your question here..." aria-label="Question input" required>
-            <div class="input-group-append">
-                <button class="btn btn-primary" onclick="handleSubmit()"><i class="fas fa-paper-plane"></i> Summarize</button>
-            </div>
+            .btn:hover {
+                background-color: #e94b8a;
+                transform: translateY(-3px);
+            }
+
+            #result {
+                display: none;
+                font-size: 1.1rem;
+                color: #e3e3e3;
+                background-color: #1b1b2f;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                margin-top: 30px;
+            }
+
+            canvas {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <canvas id="bg"></canvas>
+        <div class="container">
+            <h1>URL Summarizer</h1>
+            <p>Transform complex URLs into simple insights.</p>
+            <form action="{% url 'url' %}" method="POST">
+                {% csrf_token %}
+                <div class="input-group">
+                    <input
+                        type="text"
+                        id="urlInput"
+                        name="url"
+                        class="form-control"
+                        placeholder="Enter URL here..."
+                        required
+                    />
+                    <input
+                        type="text"
+                        name="question"
+                        id="questionInput"
+                        class="form-control"
+                        placeholder="Ask your question here..."
+                        required
+                    />
+                </div>
+                <div class="input-group">
+                    <select
+                        name="language"
+                        id="targetLanguage"
+                        class="form-control"
+                        required
+                    >
+                        <option value="" disabled selected>
+                            Select target language...
+                        </option>
+                        <option value="hindi">Hindi</option>
+                        <option value="tamil">Tamil</option>
+                        <option value="malayalam">Malayalam</option>
+                    </select>
+                </div>
+                <div class="btn-wrapper">
+                    <input class="btn" type="submit" value="Summarize" />
+                </div>
+            </form>
+            <div id="result" class="alert alert-light mt-4"></div>
         </div>
-        <div id="result" class="alert alert-light"></div>
-    </div>
 
-    <div class="footer">
-        <p>© 2024 URL Summarizer. All rights reserved.</p>
-    </div>
+        <!-- Three.js Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script>
+            // Three.js Setup
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(
+                75,
+                window.innerWidth / window.innerHeight,
+                0.1,
+                1000
+            );
+            const renderer = new THREE.WebGLRenderer({
+                canvas: document.getElementById("bg"),
+                alpha: true,
+            });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            camera.position.z = 5;
 
-    <script>
-        async function handleSubmit() {
-            const url = document.getElementById('urlInput').value;
-            const question = document.getElementById('questionInput').value;
-            const resultDiv = document.getElementById('result');
-            if (url && question) {
-                try {
-                    const response = await fetch('/fetch-url/', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'X-CSRFToken': getCookie('csrftoken')
-                        },
-                        body: JSON.stringify({ url: url, question: question })
-                    });
+            const particlesGeometry = new THREE.BufferGeometry();
+            const particlesCount = 1000;
+            const posArray = new Float32Array(particlesCount * 3);
 
-                    if (response.ok) {
-                        const result = await response.json();
-                        resultDiv.innerText = result.answer || 'No answer available.';
-                        resultDiv.style.display = 'block';
-                    } else {
-                        alert('Failed to fetch content.');
-                    }
-                } catch (error) {
-                    console.error('Error:', error);
-                }
-            } else {
-                alert('Please enter a URL and a question.');
+            for (let i = 0; i < particlesCount * 3; i++) {
+                posArray[i] = (Math.random() - 0.5) * 10;
             }
-        }
 
-        function getCookie(name) {
-            let cookieValue = null;
-            if (document.cookie && document.cookie !== '') {
-                const cookies = document.cookie.split(';');
-                for (let i = 0; i < cookies.length; i++) {
-                    const cookie = cookies[i].trim();
-                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                        break;
-                    }
-                }
+            particlesGeometry.setAttribute(
+                "position",
+                new THREE.BufferAttribute(posArray, 3)
+            );
+            const particlesMaterial = new THREE.PointsMaterial({
+                size: 0.05,
+                color: "#ff2e63",
+                transparent: true,
+                opacity: 0.8,
+            });
+
+            const particles = new THREE.Points(
+                particlesGeometry,
+                particlesMaterial
+            );
+            scene.add(particles);
+
+            // Animation Loop
+            function animateParticles() {
+                requestAnimationFrame(animateParticles);
+                particles.rotation.y += 0.001;
+                renderer.render(scene, camera);
             }
-            return cookieValue;
-        }
-    </script>
-</body>
 
+            animateParticles();
+
+            // Resize Listener
+            window.addEventListener("resize", () => {
+                renderer.setSize(window.innerWidth, window.innerHeight);
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+            });
+        </script>
+    </body>
 </html>

@@ -12,13 +12,11 @@ from transformers import MBartForConditionalGeneration, MBart50TokenizerFast, pi
 # warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 import requests
 from django.http import HttpResponse
 
-import requests
-import requests
 import feedparser
 from bs4 import BeautifulSoup
 from fpdf import FPDF
@@ -29,21 +27,31 @@ def index(request):
 
 
 def url(request):
+    if request.method == "POST":
+        url = request.POST.get('url')
+        question = request.POST.get("question")
+        language = request.POST.get("language")
+        
+        request.session['question'] = question
+        request.session['language'] = language
     # Fetching the content from the URL
-    res = requests.get("https://www.geeksforgeeks.org/introduction-of-system-call")
-    soup = BeautifulSoup(res.content, "html.parser")
-    content = soup.get_text()
+        res = requests.get(url)
+        soup = BeautifulSoup(res.content, "html.parser")
+        content = soup.get_text()
 
-    # Writing the content to a file with UTF-8 encoding
-    with open("demofile3.txt", "w", encoding="utf-8") as f:
-        for line in content.splitlines():
-            f.write(line + "\n")
+        # Writing the content to a file with UTF-8 encoding
+        with open("demofile3.txt", "w", encoding="utf-8") as f:
+            for line in content.splitlines():
+                f.write(line + "\n")
 
     # Return a response indicating success
     return render(request, 'content_display.html', {'content': content})
+    # return redirect('summary')
 
 
 def summary(request):
+    question = request.session.get('question')
+    language = request.session.get('language')
     # Path to the local text file
     txt_path = r'demofile3.txt'
     # Reading text content from the file with UTF-8 encoding
@@ -89,7 +97,8 @@ def summary(request):
     chain = load_qa_chain(qa_model, chain_type="stuff", prompt=prompt)
 
     # Getting the question from the user input (request parameter)
-    question = request.GET.get('question', 'What is a system call?')
+    # question = request.GET.get('question', 'What is a system call?')
+    
 
     # Loading the FAISS index for searching relevant documents
     try:
@@ -158,7 +167,7 @@ def summary(request):
         # Ask the user for the target language
         # target_language = input("Enter the target language (hindi, tamil, malayalam): ").strip().lower()
         global target_language
-        target_language = 'hindi'
+        target_language = language
 
         # Check if the target language is supported
         if target_language in language_codes:
